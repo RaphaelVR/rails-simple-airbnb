@@ -1,27 +1,39 @@
 <div id="<%= dom_id flat %>">
-  <p>
+  <%# <p>
     <strong>Name:</strong>
     <%= flat.name %>
-  </p>
+  <%# </p>
 
   <p>
     <strong>Address:</strong>
     <%= flat.address %>
-  </p>
+  <%# </p>
 
   <p>
     <strong>Description:</strong>
     <%= flat.description %>
-  </p>
+  <%# </p> %>
 
-  <p>
-    <strong>Price per night:</strong>
-    <%= flat.price_per_night %>
-  </p>
+  <%# <p> %>
+    <%# <strong>Price per night:</strong> %>
+    <%# <%= flat.price_per_night %>
+  <%# </p> %>
+<%#  %>
+  <%# <p> %>
+    <%# <strong>Number of guests:</strong> %>
+    <%# <%= flat.number_of_guests %>
+  <%# </p> %>
+<%#  %>
+<%# </div> %>
 
-  <p>
-    <strong>Number of guests:</strong>
-    <%= flat.number_of_guests %>
-  </p>
-
+<div class="d-flex align-content-between flex-wrap " style= "width: 18rem;">
+  <img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=697&q=80" class="card-img-top" alt="Flat">
+  <div class="card-body">
+    <h5 class="card-title"><%= flat.name %></h5>
+    <h5 class="card-title"><%= flat.address %></h5>
+    <p class="card-text"><%= flat.description %></p>
+    <h5 class="card-title"><%= flat.price_per_night %></h5>
+    <h5 class="card-title"><%= flat.number_of_guests %></h5>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
 </div>
